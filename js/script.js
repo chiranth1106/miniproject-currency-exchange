@@ -72,7 +72,7 @@ const updateExchangeRate = async () => {
   let respone = await fetch(URL);
   let data = await respone.json();
   let t = data.base = fromCurr.value;
-  console.log(data);
+  // console.log(data);
   let exRate = data.rates[toCurr.value];
   // console.log(exRate);
 
